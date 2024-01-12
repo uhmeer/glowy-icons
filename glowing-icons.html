@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <title>Glowing Icons</title>
+</head>
+<style>
+
+    body {
+        background: #262626;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+
+    }
+
+    ul li {
+        list-style: none;
+        margin: 15px 0;
+    }
+
+    ul a {
+        position: relative;
+        display: block;
+        width: 2em ;
+        text-align: center;
+        line-height: 60px;
+        background: #333;
+        border-radius: 50%;
+        font-size: 2em;
+        color: #666;
+        transition: .5s;
+    }
+
+    ul li a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: #ffee10;
+        transition: .5s;
+        transform: scale(.9);
+        z-index: -1;
+    }
+
+    ul li a:hover::before {
+        transform: scale(1.1);
+        box-shadow: 0 0 1.3em #ffee10;
+    }  
+
+    ul li a:hover {
+        color:#ffee10;
+        box-shadow: 0 0 5px #ffee10 ;
+        text-shadow: 0 0 5px #ffee10;
+
+    }
+
+
+
+
+
+
+
+   
+</style>
+<body>
+
+    <div class="list">
+        <ul>
+            <li><a href="#"><i class="fab fa-edge"></i></a></li>
+            <li><a href="#"><i class="fab fa-firefox"></i></a></li>
+            <li><a href="#"><i class="fab fa-chrome"></i></a></li>
+            <li><a href="#"><i class="fab fa-opera"></i></a></li>
+        </ul>
+    </div>
+
+    
+</body>
+</html>
